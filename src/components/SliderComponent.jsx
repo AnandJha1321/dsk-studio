@@ -22,26 +22,33 @@ export default function SliderComponent() {
         <SwiperSlide>
           <Image 
             src={slide1}
+            alt='slid1'
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image 
             src={slide2}
+            alt='slid2'
+
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image 
             src={slide3}
+            alt='slid3'
+
           />
         </SwiperSlide>
         <SwiperSlide>
         <Image 
             src={slide4}
+            alt='slid4'
           />
         </SwiperSlide>
         <SwiperSlide>
         <Image 
             src={slide5}
+            alt='slid5'
           />
         </SwiperSlide>
       </Swiper>
