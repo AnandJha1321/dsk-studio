@@ -65,8 +65,18 @@ const Menu = () => {
             <ul className='flex flex-col items-center gap-4'>
               {
                 navLinks.map((nav, i) => (
-                  <li key={i} className='text-[#747070] cursor-pointer text-[18px] tracking-wider
-                   hover:text-[#CFB661] transition duration-300 font-medium'>{nav.nav}</li>
+                  <Link
+                    href={'#'}
+                  >
+                   <li key={i} 
+                  className='text-[#747070] cursor-pointer text-[18px] tracking-wider
+                    hover:text-[#CFB661] transition duration-300 font-medium'
+                    
+                    >
+                      {nav.nav}
+                      
+                   </li>
+                  </Link>
                 ))
                }
                 <InquiryButton />
