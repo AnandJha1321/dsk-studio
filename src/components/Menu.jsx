@@ -67,8 +67,9 @@ const Menu = () => {
                 navLinks.map((nav, i) => (
                   <Link
                     href={'#'}
+                    key={i} 
                   >
-                   <li key={i} 
+                   <li 
                   className='text-[#747070] cursor-pointer text-[18px] tracking-wider
                     hover:text-[#CFB661] transition duration-300 font-medium'
                     
