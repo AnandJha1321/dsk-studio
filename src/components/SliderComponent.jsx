@@ -18,7 +18,7 @@ import slide5 from '@/assets/slide5.PNG'
 export default function SliderComponent() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="">
+      <Swiper navigation={true} modules={[Navigation]} className="swiper">
         <SwiperSlide>
           <Image 
             src={slide1}
