@@ -18,6 +18,7 @@ const InquiryButton = () => {
                 src={Vector}
                 width= "100%"
                 height= "100%"
+                alt='InquireButton'
                 />
             </span> 
             Inquire Now

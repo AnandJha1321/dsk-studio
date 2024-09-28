@@ -12,6 +12,7 @@ const Hero = () => {
         objectFit="cover"
         alt="Makeup Studio Hero"
         priority
+    
       />
       
       {/* Overlay with text */}
