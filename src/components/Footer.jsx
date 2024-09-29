@@ -15,7 +15,10 @@ const Footer = () => {
   return (
     <section className='max-h-screen w-full bg-white  flex flex-col items-center mt-14 gap-8'>
        
-        <Logo  width = {30}/>
+       <div className='flex flex-col items-center py-0 cursor-pointer'>
+        <h1 className= {`font-inter font-bold text-[#FFD700] text-[32px] leading-none md:text-[40px]'`}>DSK</h1>
+        <p className='font-jacques text-[12px] leading-none tracking-wide md:text-[15px] '>Makeover & Academy</p>  
+        </div>
 
         <p className='text-16px text-center font-montserrat w-[80vw] text-[#646363]'>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using Content hereIt is a long established.</p>
 
