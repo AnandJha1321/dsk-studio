@@ -6,7 +6,7 @@ import InquiryButton from './InquiryButton'
 
 const Services = () => {
   return (
-    <div className='max-h-screen bg-white p-4 flex flex-col items-center gap-12'>
+    <div className='min-h-screen bg-white p-4 flex flex-col items-center gap-12'>
         <div className='flex flex-col items-center mt-10'>
             <h3 className='font-jacques text-[32px] leading-none text-[#CFB661]'>Featured Services</h3>
             <p className='font-montserrat text-[12px]'>Services Loved by people</p>
@@ -21,12 +21,11 @@ const Services = () => {
         </div>
 
         <div>
-            <ServiceComponent img = {demo} text= "BRIDE & GROOM"/>
+            <ServiceComponent img = {demo} text= "SHOOT MAKEUP"/>
         </div>
 
 
         <InquiryButton />
-        
     </div>
   )
 }

@@ -10,7 +10,9 @@ const About = () => {
     <section className='min-h-fit bg-white py-10 flex flex-col items-center gap-8'>
       <div className='flex flex-col gap-[1px]'>
         <Line />
+        <div>
         <Line />
+        </div>
       </div>
 
       <div className='flex flex-col items-center'>
@@ -39,12 +41,14 @@ const About = () => {
           opportunity for a 3-month internship at DSK, ensuring that students gain real-world experience in a professional environment.
         </p>
 
-        <CoursesButton />
+        <div className='mt-10'>
+           <CoursesButton />
+        </div>
       </div>
 
       <div className='flex flex-col gap-[1px]'>
-        <Line />
-        <Line />
+      <div className="w-[90vw] h-[1.5px] bg-[#969494] mt-1 sm:h-[2px]"></div>
+      <Line />
       </div>
     </section>
   );
