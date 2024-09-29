@@ -8,7 +8,7 @@ const Header = () => {
     <div className='flex flex-col'>
       <header className="bg-black text-white md:h-[140px] h-[70px] shadow-md  w-full z-50">
       <nav className="container md:mx-auto md:flex md:justify-between md:items-center p-4">
-        <Logo />
+        <Logo width={24}/>
         <ul className="md:flex space-x-6 hidden">
           <li><Link href="/">Home</Link></li>
           <li><a href="#services">Services</a></li>
