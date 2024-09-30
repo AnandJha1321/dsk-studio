@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LockClosedIcon, MenuIcon, XIcon } from '@heroicons/react/solid';
+import { MenuIcon, XIcon } from '@heroicons/react/solid';
 import InstaIcon from '@/assets/icons/Insta.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -23,7 +23,20 @@ const Menu = () => {
   const navLinks = [
     { nav: 'HOME', href: '/' },
     { nav: 'COURSES', href: '/courses' },
-    { nav: 'SERVICES', href: '/#services', scroll: false, onClick: scrollToServices },
+    {
+      nav: 'SERVICES',
+      href: '#services',
+      onClick: (e) => {
+        e.preventDefault();
+        // Check if we are on the home page or not
+        if (window.location.pathname === '/') {
+          scrollToServices(e); // If on home page, scroll smoothly
+        } else {
+          // If on a different page, navigate to the home page
+          window.location.href = '/#services';
+        }
+      },
+    },
     { nav: 'GALLERY', href: '#' },
     { nav: 'ARTISTS', href: '#' },
   ];
@@ -55,21 +68,22 @@ const Menu = () => {
       >
         <ul className="flex flex-col items-center bg-[#F0EDE3] p-4 gap-2">
           <li>
-            <Link href="https://www.instagram.com/dsk_makeup_studio/?hl=en" target='_blank'>
+            <Link href="https://www.instagram.com/dsk_makeup_studio/?hl=en" target="_blank">
               <Image src={InstaIcon} alt="Insta Logo" width={20} height={20} className="mb-4" />
             </Link>
           </li>
           <ul className="flex flex-col items-center gap-4">
             {navLinks.map((nav, i) => (
-              <Link href={nav.href} key={i} onClick={handleMenu}>
-              <li 
-                className='text-[#747070] cursor-pointer text-[18px] tracking-wider
-                  hover:text-[#CFB661] transition duration-300 font-medium'
-                onClick={(e) => nav.onclick ? nav.onclick(e) : null}
-              >
-                {nav.nav}
+              <li key={i}>
+                <Link href={nav.href} onClick={handleMenu}>
+                  <span
+                    className="text-[#747070] cursor-pointer text-[18px] tracking-wider hover:text-[#CFB661] transition duration-300 font-medium"
+                    onClick={nav.onClick}
+                  >
+                    {nav.nav}
+                  </span>
+                </Link>
               </li>
-            </Link>
             ))}
             <InquiryButton />
           </ul>

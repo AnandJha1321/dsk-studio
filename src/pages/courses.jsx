@@ -1,4 +1,6 @@
 import BookingButton from "@/components/courses/BookingButton"
+import CourseCard from "@/components/courses/Coursebox1"
+import Coursebox1 from "@/components/courses/Coursebox1"
 import Header from "@/components/Header"
 
 const Courses = () => {
@@ -27,6 +29,10 @@ const Courses = () => {
         </video>
 
         <BookingButton />
+      </section>
+
+      <section className="bg-white min-h-screen w-full px-5 py-20">
+        <CourseCard />
       </section>
     </main>
   )
