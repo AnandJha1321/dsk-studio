@@ -10,10 +10,24 @@ const Header = () => {
       <nav className="container md:mx-auto md:flex md:justify-between md:items-center p-4">
         <Logo width= "30px"/>
         <ul className="md:flex space-x-6 hidden">
-          <li><Link href="/">Home</Link></li>
-          <li><a href="#services">Services</a></li>
-          <li><Link href="/courses">Courses</Link></li>
-          <li><Link href="/gallery">Gallery</Link></li>
+          <li>
+            <Link href="/">
+                Home
+             </Link>
+          </li>
+          <li><Link href="/#services" scroll= {false}>
+              Services</Link>
+            </li>
+          <li>
+            <Link href="/courses">
+            Courses
+            </Link>
+          </li>
+          <li>
+            <Link href="/gallery">
+            Gallery
+            </Link>
+            </li>
           <li><Link href="/our-story">Our Story</Link></li>
         </ul>
       </nav>

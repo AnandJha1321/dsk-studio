@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 const InquiryButton = () => {
   return (
-    <Link
-    href={"#"}
+    <a
+    href= "tel:+9321633596"
     >
     <div className='w-[200px] h-[50px] bg-[#CFB661] flex items-center justify-center 
     cursor-pointer custom-shadow mb-2'>
@@ -16,7 +16,7 @@ const InquiryButton = () => {
             <span className='mt-1'>
                 <Image 
                 src={Vector}
-                width= "100%"
+                width= "100%" 
                 height= "100%"
                 alt='vector'
                 />
@@ -24,7 +24,7 @@ const InquiryButton = () => {
             Inquire Now
          </p>
     </div>
-    </Link>
+    </a>
   )
 }
 
