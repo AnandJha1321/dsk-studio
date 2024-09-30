@@ -21,7 +21,7 @@ const Menu = () => {
   };
 
   const navLinks = [
-    { nav: 'HOME', href: '#' },
+    { nav: 'HOME', href: '/' },
     { nav: 'COURSES', href: '/courses' },
     { nav: 'SERVICES', href: '/#services', scroll: false, onClick: scrollToServices },
     { nav: 'GALLERY', href: '#' },
@@ -65,7 +65,7 @@ const Menu = () => {
               <li 
                 className='text-[#747070] cursor-pointer text-[18px] tracking-wider
                   hover:text-[#CFB661] transition duration-300 font-medium'
-                onClick={(e) => nav.onClick ? nav.onClick(e) : null}
+                onClick={(e) => nav.onclick ? nav.onclick(e) : null}
               >
                 {nav.nav}
               </li>
