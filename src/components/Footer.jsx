@@ -32,9 +32,11 @@ const Footer = () => {
         <div className='flex flex-col items-center text-[4vw] font-montserrat text-[#696767] tracking-wide'>
             <p className='flex gap-2 justify-center items-center'>
                 FOLLOW US ON
-                <span className='underline font-jacques text-[6vw] text-[#BFA534]'>
+                <a href="https://www.instagram.com/dsk_makeup_studio/?hl=en">
+                <span  className='underline font-jacques text-[6vw] text-[#BFA534]'>
                     Instragram
                 </span>
+                </a>
             </p>
 
             <div className='flex w-full gap-2 mt-10'>

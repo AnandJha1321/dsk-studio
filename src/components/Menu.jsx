@@ -22,7 +22,7 @@ const Menu = () => {
 
   const navLinks = [
     { nav: 'HOME', href: '#' },
-    { nav: 'COURSES', href: '#' },
+    { nav: 'COURSES', href: '/courses' },
     { nav: 'SERVICES', href: '/#services', scroll: false, onClick: scrollToServices },
     { nav: 'GALLERY', href: '#' },
     { nav: 'ARTISTS', href: '#' },
@@ -55,24 +55,21 @@ const Menu = () => {
       >
         <ul className="flex flex-col items-center bg-[#F0EDE3] p-4 gap-2">
           <li>
-            <Link href="https://www.instagram.com/dsk_makeup_studio/?hl=en">
+            <Link href="https://www.instagram.com/dsk_makeup_studio/?hl=en" target='_blank'>
               <Image src={InstaIcon} alt="Insta Logo" width={20} height={20} className="mb-4" />
             </Link>
           </li>
           <ul className="flex flex-col items-center gap-4">
             {navLinks.map((nav, i) => (
-              <li
-                key={i}
-                className="text-[#747070] cursor-pointer text-[18px] tracking-wider hover:text-[#CFB661] transition duration-300 font-medium"
+              <Link href={nav.href} key={i} onClick={handleMenu}>
+              <li 
+                className='text-[#747070] cursor-pointer text-[18px] tracking-wider
+                  hover:text-[#CFB661] transition duration-300 font-medium'
+                onClick={(e) => nav.onClick ? nav.onClick(e) : null}
               >
-                {nav.scroll === false ? (
-                  <a href={nav.href} onClick={nav.onClick}>
-                    {nav.nav}
-                  </a>
-                ) : (
-                  <Link href={nav.href}>{nav.nav}</Link>
-                )}
+                {nav.nav}
               </li>
+            </Link>
             ))}
             <InquiryButton />
           </ul>
