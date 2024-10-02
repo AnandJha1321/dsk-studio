@@ -3,7 +3,7 @@ import Image from 'next/image';
 import course1 from '@/assets/course1.png';
 import CallnowButton from './CallnowButton';
 import Link from 'next/link';
-import course2 from '@/assets/course2.png'
+import course2 from '@/assets/course2.PNG'
 import course3 from '@/assets/course3.png'
 import course4 from '@/assets/course4.jpeg'
 import course6 from '@/assets/course6.jpg'
