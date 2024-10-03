@@ -1,6 +1,7 @@
 import { PlusIcon, XIcon } from '@heroicons/react/solid'
 import React, { useState } from 'react'
 
+
 const Faq = () => {
     const [activeIndex, setActiveIndex] = useState(null); // Manage which question is open
 
@@ -17,12 +18,12 @@ const Faq = () => {
       };
 
   return (
-    <div className='flex flex-col gap-10 justify-center items-center'>
+    <div className='flex flex-col justify-center items-center'>
         <div>
             <h2 className="text-center leading-[20px] font-jacques text-[26px] text-[#A88C13]">
                 Any Qestions?
             </h2>
-            <p>we have the answers! </p>
+            <p className='text-center text-[12px] leading-8 font-montserrat'>we have the answers! </p>
         </div>
 
         <div className='font-montserrat'>

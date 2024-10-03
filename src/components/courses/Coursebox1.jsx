@@ -10,6 +10,7 @@ import course6 from '@/assets/course6.jpg'
 import course5 from '@/assets/course5.jpg'
 import CoursesButton from '../CoursesButton';
 import BookingButton from './BookingButton';
+import { PhoneIcon } from '@heroicons/react/solid';
 
 
 const CourseList = () => {
@@ -105,15 +106,15 @@ const CourseList = () => {
 
     <div>
        <div className="flex text-[9.5px] gap-[2px] items-center justify-center w-full leading-none font-montserrat mt-2">
-        <div className='flex absolute'>
+        <div className='flex absolute sm:initail sm:px-3'>
         {courses.map((course) => (
           <p 
             key={course.id} 
             onClick={() => scrollToCourse(course.id)} 
             className="cursor-pointer text-gray-500 text-[8.2px]
-             hover:text-[#A88C13]  transition duration-200 hover:underline md:hidden sm:text-[16px] sm:hover:text-[16px] mt-4 uppercase"
+             hover:text-[#A88C13]  transition hover:underline md:hidden sm:text-[14px]  mt-4 uppercase"
           > 
-            <span className= {course.id === "basic-to-international" ? 'hidden' : 'mx-[3px]'}>
+            <span className= {course.id === "basic-to-international" ? 'hidden' : 'mx-[3px] sm:mx-[6px]'}>
               |
             </span>
             {course.selectName}
@@ -126,7 +127,7 @@ const CourseList = () => {
         <div id={course.id} key={index}  className='flex flex-col items-center'>
           <CourseCard course={course} />
           {index === 2 ? (
-            <div className='mt-8'>
+            <div className='mt-8 md:hidden'>
               <BookingButton />
             </div>
           ) : ''}
@@ -164,10 +165,13 @@ const CourseCard = ({ course }) => {
               <li key={index} className="text-white">{item}</li>
             ))}
           </ul>
-          <button className="bg-white text-black px-2 text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200">
-            <span className="mr-2">📞</span>Call Now For 10% off
+          <div className='flex '>
+          <button className="bg-white flex text-black px-2 items-center justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200">
+            <span className="mr-2"><PhoneIcon className='w-4'/></span>
+            Call Now For 10% off
           </button>
-          <button className="bg-black text-white px-4 py-2 ml-2 text-[14px] font-montserrat">Learn More</button>
+          <button className="bg-black flex text-white ml-3 px-3 items-center hover:text-black justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200">Learn More</button>
+          </div>
         </div>
       </div>
     </section>
