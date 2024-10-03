@@ -27,15 +27,15 @@ const Faq = () => {
 
         <div className='font-montserrat'>
             {faqs.map((faq, index) => (
-                <div key={index}  onClick={() => toggleFAQ(index)}  className='flex flex-col cursor-pointer'>
-                    <div className='flex  items-center justify-between mt-4'>
-                    <span className="text-black">{faq.question}</span>
-                        {activeIndex === index ? (
-                        <XIcon className='w-5 text-[#A88C13]' /> // Cross icon when active
-                        ) : (
-                        <PlusIcon className='w-5 text-[#A88C13]' /> // Plus icon when inactive
-                        )}
-                    </div>
+                <div key={index}  onClick={() => toggleFAQ(index)}  className='flex flex-col cursor-pointer '>
+                    <div className='flex  items-center justify-between mt-8'>
+                        <span className="text-black">{faq.question}</span>
+                            {activeIndex === index ? (
+                            <XIcon className='w-5 text-[#A88C13]' /> // Cross icon when active
+                            ) : (
+                            <PlusIcon className='w-5 text-[#A88C13]' /> // Plus icon when inactive
+                            )}
+                        </div>
                     <div className='h-[0.5px] w-[80vw] bg-[#969494] '></div>
 
                     {/* Answer */}
