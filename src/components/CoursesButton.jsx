@@ -13,7 +13,7 @@ const CoursesButton = () => {
   };
 
   return (
-    <Link href={'#'}>
+    <Link href={'/courses'}>
       <div
         onClick={handleClick}
         className='w-[200px] h-[50px] bg-[#CFB661] flex items-center justify-center 

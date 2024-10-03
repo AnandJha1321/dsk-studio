@@ -1,6 +1,8 @@
 import BookingButton from "@/components/courses/BookingButton"
 import CourseCard from "@/components/courses/Coursebox1"
 import Coursebox1 from "@/components/courses/Coursebox1"
+import Faq from "@/components/courses/Faq"
+import StudentsWorkComponent from "@/components/courses/StudentsWorkComponent"
 import Header from "@/components/Header"
 import Link from "next/link"
 
@@ -36,6 +38,24 @@ const Courses = () => {
       <section className="bg-white min-h-screen w-full px-4 py-8">
         <h2 className="text-center font-jacques text-[26px] text-[#A88C13]  leading-tight">Select Courses</h2>
                 <CourseCard />
+        <div className="flex justify-center mt-10">
+           <BookingButton />
+        </div>
+      </section>
+
+      <section className="min-h-screen bg-[#F0EDE3] py-8 flex flex-col">
+        <div>
+        <h2 className="text-center leading-[20px] font-jacques text-[26px] text-[#A88C13]">
+            Our Students Work
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
+              <StudentsWorkComponent/>
+        </div>
+
+        <div className="">
+          <Faq />
+        </div>
       </section>
     </main>
   )

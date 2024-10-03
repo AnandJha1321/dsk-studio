@@ -8,6 +8,8 @@ import course3 from '@/assets/course3.png'
 import course4 from '@/assets/course4.jpeg'
 import course6 from '@/assets/course6.jpg'
 import course5 from '@/assets/course5.jpg'
+import CoursesButton from '../CoursesButton';
+import BookingButton from './BookingButton';
 
 
 const CourseList = () => {
@@ -66,7 +68,7 @@ const CourseList = () => {
     },
     {
       id: 'basic-to-advance',
-      title: 'Basic to Advance (Diploma)',
+      title: 'Advance Diploma course',
       selectName: 'Diploma',
       price: '24499',
       description: 'Everything you need to makeup a bridal, from Haldi to Reception, this course focuses on making you a Bridal Artist even if you are a complete beginner.',
@@ -103,24 +105,31 @@ const CourseList = () => {
 
     <div>
        <div className="flex text-[9.5px] gap-[2px] items-center justify-center w-full leading-none font-montserrat mt-2">
+        <div className='flex absolute'>
         {courses.map((course) => (
           <p 
             key={course.id} 
             onClick={() => scrollToCourse(course.id)} 
-            className="cursor-pointer text-gray-500
-             hover:text-[#A88C13] hover:text-[10px] transition duration-200 hover:underline"
-          >
-            <span className= {course.id === "basic-to-international" ? 'hidden' : 'mr-1'}>
+            className="cursor-pointer text-gray-500 text-[8.2px]
+             hover:text-[#A88C13]  transition duration-200 hover:underline md:hidden sm:text-[16px] sm:hover:text-[16px] mt-4 uppercase"
+          > 
+            <span className= {course.id === "basic-to-international" ? 'hidden' : 'mx-[3px]'}>
               |
             </span>
             {course.selectName}
           </p>
         ))}
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
       {courses.map((course, index) => (
-        <div id={course.id} key={index} >
+        <div id={course.id} key={index}  className='flex flex-col items-center'>
           <CourseCard course={course} />
+          {index === 2 ? (
+            <div className='mt-8'>
+              <BookingButton />
+            </div>
+          ) : ''}
         </div>
       ))}
     </div>
@@ -143,8 +152,8 @@ const CourseCard = ({ course }) => {
       {/* Overlay with text */}
       <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col py-6 px-6">
         <div className="my-3">
-          <h1 className="text-[#cfb336] text-[24px] leading-tight mb-1 font-medium font-montserrat w-[342px]">
-            {course.title} <span className='text-[16px]'>(₹{course.price})</span>
+          <h1 className="text-[#cfb336] text-[24px] leading-tight mb-1 font-medium font-montserrat w-[334px]">
+            {course.title} 
           </h1>
           <p className="text-gray-300 text-xs font-montserrat w-[320px] mb-4">
             {course.description}
