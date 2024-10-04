@@ -38,7 +38,7 @@ const Menu = () => {
       },
     },
     { nav: 'GALLERY', href: '#' },
-    { nav: 'ARTISTS', href: '#' },
+    { nav: 'ARTISTS', href: '/artists' },
   ];
 
   return (

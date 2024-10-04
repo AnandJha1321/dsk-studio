@@ -3,6 +3,7 @@ import CourseCard from "@/components/courses/Coursebox1"
 import Coursebox1 from "@/components/courses/Coursebox1"
 import Faq from "@/components/courses/Faq"
 import StudentsWorkComponent from "@/components/courses/StudentsWorkComponent"
+import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import Link from "next/link"
 
@@ -43,7 +44,7 @@ const Courses = () => {
         </div>
       </section>
 
-      <section className="min-h-screen bg-[#F0EDE3] py-8 flex flex-col">
+      <section className="max-h-screen bg-[#F0EDE3] py-8 flex flex-col">
         <div>
         <h2 className="text-center leading-[20px] font-jacques text-[26px] text-[#A88C13]">
             Our Students Work
@@ -57,6 +58,8 @@ const Courses = () => {
           <Faq />
         </div>
       </section>
+
+      <Footer />
     </main>
   )
 }
