@@ -1,28 +1,3 @@
-import { useEffect, useState } from 'react';
-
-const Counter = ({ endValue, duration }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-    const end = endValue;
-    const incrementTime = (duration * 1000) / end;  // Calculate the interval
-
-    let counter = setInterval(() => {
-      start += 1;
-      setCount(start);
-
-      if (start === end) {
-        clearInterval(counter);
-      }
-    }, incrementTime);
-
-    return () => clearInterval(counter); // Cleanup interval on component unmount
-  }, [endValue, duration]);
-
-  return ;
-};
-
 const CounterSection = () => {
   return (
 <section className= "min-h-[600px] w-full bg-black py-8 flex flex-col items-center gap-20 font-montserra md:flex-row md:items-center md:justify-center md:gap-28">      

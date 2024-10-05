@@ -3,7 +3,7 @@ import Image from "next/image";
 import mobileartistbg  from '@/assets/mobileartistsbg.jpg'
 import Line from "@/components/Line";
 import AboutArtists from "@/components/artists/AboutArtists";
-import diya from '@/assets/diya.jpg'
+import diya from '@/assets/diya.JPG'
 import deepali from '@/assets/deepali.jpeg'
 import CounterSection from "@/components/artists/CounterComponent";
 
