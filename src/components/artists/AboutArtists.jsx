@@ -17,7 +17,7 @@ const AboutArtists = ({src, text, name}) => {
        />
 
       <div className="flex flex-col items-center justify-center gap-4">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-1">
           <p className="font-montserrat font-light text-[#787474] mt-8 leading-none text-[12px]">Hello, I’m </p>
           <h3 className="font-jacques text-[28px] leading-none">{name}</h3>
         </div>
