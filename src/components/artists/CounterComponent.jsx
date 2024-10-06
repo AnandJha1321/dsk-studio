@@ -1,6 +1,6 @@
 const CounterSection = () => {
   return (
-<section className= "min-h-[600px] w-full bg-black py-8 flex flex-col items-center gap-20 font-montserra md:flex-row md:items-center md:justify-center md:gap-28">      
+<section className= "min-h-[600px] w-full bg-black py-8 flex flex-col items-center justify-center gap-20 font-montserra md:flex-row md:items-center md:justify-center md:gap-28 ">      
   <div>
     <div className= "text-[#CFB661] font-jacques text-[16vw] md:text-[10vw] leading-tight pl-2">20+</div>        
     <p className="text-white text-center md:text-[18px]">Years of Experience</p>
@@ -11,7 +11,7 @@ const CounterSection = () => {
       </div>
       <div>
       <div className= "text-[#CFB661] font-jacques text-[16vw] md:text-[10vw] leading-tight pl-2">5.0+</div>        
-        <p className= "text-white text-center md:text-[18px]">Rating on Google</p>
+        <p className= "text-white text-center md:text-[18px] mb-4">Rating on Google</p>
       </div>
 </section >
   );

@@ -6,6 +6,7 @@ import AboutArtists from "@/components/artists/AboutArtists";
 import diya from '@/assets/diya.JPG'
 import deepali from '@/assets/deepali.jpeg'
 import CounterSection from "@/components/artists/CounterComponent";
+import OverlayHero from "@/components/artists/OverlayHero";
 
 
 const Artists = () => {
@@ -45,10 +46,10 @@ const Artists = () => {
       
       <AboutArtists src = {diya} text= {artistdata[0].text} name= {artistdata[0].name} />
       <AboutArtists src = {deepali} text= {artistdata[1].text} name= {artistdata[1].name} />
+      </section>  
+      <CounterSection />
 
-      
-        <CounterSection />
-      </section>
+      <OverlayHero />
       
     </main>
   )

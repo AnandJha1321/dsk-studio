@@ -8,11 +8,9 @@ import CoursesButton from './CoursesButton';
 const About = () => {
   return (
     <section className='min-h-fit bg-white py-10 flex flex-col items-center gap-8'>
-      <div className='flex flex-col gap-[1px]'>
+      <div className='flex flex-col gap-[2px]'>
         <Line />
-        <div>
         <Line />
-        </div>
       </div>
 
       <div className='flex flex-col items-center'>
@@ -47,7 +45,7 @@ const About = () => {
       </div>
 
       <div className='flex flex-col gap-[1px]'>
-      <div className="w-[90vw] h-[1.5px] bg-[#969494] mt-1 sm:h-[2px]"></div>
+        <Line />
       <Line />
       </div>
     </section>
