@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Header from '@/components/Header';
-import importAll from '@/components/Gallery/Images';
 import Footer from '@/components/Footer';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+import importAll from '@/components/Gallery/Images';
 
 // Import images dynamically using require.context
 const allImages = importAll(require.context('../assets/gallery', false, /\.(png|PNG|JPG|jpe?g|jpg|svg)$/));
@@ -76,13 +77,17 @@ const Gallery = () => {
 
               {/* Next and Previous Controls */}
               <div
-                className="absolute left-0 top-0 bottom-0 w-1/4 cursor-pointer"
+                className="absolute left-0 top-0 bottom-0 w-1/4 cursor-pointer flex items-center justify-start"
                 onClick={showPrevImage}
-              />
+              >
+                <ChevronLeftIcon className="w-10 h-10 text-white" />
+              </div>
               <div
-                className="absolute right-0 top-0 bottom-0 w-1/4 cursor-pointer"
+                className="absolute right-0 top-0 bottom-0 w-1/4 cursor-pointer flex items-center justify-end"
                 onClick={showNextImage}
-              />
+              >
+                <ChevronRightIcon className="w-10 h-10 text-white" />
+              </div>
             </div>
           </div>
         )}
