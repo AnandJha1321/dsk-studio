@@ -38,6 +38,9 @@ const Gallery = () => {
   return (
     <>
       <Header />
+      <div className='w-full h-[300px] text-[#FFD700]'>
+        <p className='font-jacques text-[40px]'>The Galleries</p>
+      </div>
       <div className="px-4 py-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4">
           {images.map((img, index) => (

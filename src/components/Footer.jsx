@@ -25,7 +25,7 @@ const Footer = () => {
         <CoursesButton />
 
         <div className='flex flex-col '>
-            <Line />
+            <div className="w-[90vw] h-[1.5px] bg-[#969494] mt-2"></div>
             <div className="w-[90vw] h-[1.5px] bg-[#969494] mt-2"></div>
         </div>
 
