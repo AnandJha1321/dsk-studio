@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import importAll from '@/components/Gallery/Images';
+import Footer from '@/components/Footer';
 
 // Import images dynamically using require.context
 const allImages = importAll(require.context('../assets/gallery', false, /\.(png|PNG|JPG|jpe?g|jpg|svg)$/));
@@ -38,10 +39,10 @@ const Gallery = () => {
   return (
     <>
       <Header />
-      <div className='w-full h-[300px] text-[#FFD700]'>
-        <p className='font-jacques text-[40px]'>The Galleries</p>
+      <div className='w-full bg-[#F0EDE3] h-[150px] text-[#BFA534] flex items-center justify-center'>
+        <p className='font-jacques text-[40px] tracking-widest'>The Galleries</p>
       </div>
-      <div className="px-4 py-10">
+      <div className="px-4 pb-10 bg-[#F0EDE3]">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4">
           {images.map((img, index) => (
             <div
@@ -86,6 +87,7 @@ const Gallery = () => {
           </div>
         )}
       </div>
+      <Footer />
     </>
   );
 };

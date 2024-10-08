@@ -34,7 +34,7 @@ const Footer = () => {
                 FOLLOW US ON
                 <a href="https://www.instagram.com/dsk_makeup_studio/?hl=en">
                 <span  className='underline font-jacques text-[6vw] text-[#BFA534]'>
-                    Instragram
+                    Instagram
                 </span>
                 </a>
             </p>
