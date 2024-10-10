@@ -12,7 +12,7 @@ const InquiryButton = () => {
     >
     <div className='w-[200px] h-[50px] md:w-[160px] md:h-[40px] bg-[#CFB661] flex items-center justify-center 
     cursor-pointer hover:bg-[#A88C13] transition duration-300 mb-2'>
-        <p className='flex gap-4 text-lg font-jacques text-[#4B4646] md:text-[12px]'> 
+        <p className='flex gap-4 text-lg font-jacques text-[#4B4646] md:text-[14px]'> 
             <span className='mt-1'>
                 <Image 
                 src={Vector}
@@ -25,10 +25,10 @@ const InquiryButton = () => {
 
                 <Image 
                 src={Vector}
-                width= "100%" 
+                width= {20} 
                 height= "100%"
                 alt='vector'
-                className='hidden sm:block'
+                className='hidden lg:block'
                 />
 
              

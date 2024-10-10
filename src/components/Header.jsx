@@ -24,7 +24,7 @@ const Header = () => {
     <div className="flex flex-col ">
       {/* Header section for large screens */}
       <header className="bg-black text-white font-lato text-[10px] h-[100px] shadow-md w-full z-50 
-      hidden sm:hidden md:flex items-center uppercase md:visible">
+      hidden sm:hidden md:flex items-center  md:visible">
         <nav className="w-full mx-auto flex justify-between items-center px-4">
           {/* Left side - Social icons */}
           <div className="flex ">
@@ -40,7 +40,7 @@ const Header = () => {
           {/* Left-side Navigation Links */}
           <ul className="lg:flex md:hidden lg:space-x-12 lg:items-center lg:flex-grow lg:text-left lg:justify-end">
            {navLinks.slice(0,3).map((nav,index) => (
-            <li key={index} className="text-[8px] sm:text-xs ">
+            <li key={index} className="text-[8px] sm:text-xs text-[#747070] hover:text-[#CFB661] ">
               <Link href= {nav.href}>{nav.nav}</Link>
             </li>
            ))}
@@ -55,7 +55,7 @@ const Header = () => {
           {/* Right-side Navigation Links */}
           <ul className="lg:flex  lg:space-x-12 items-center lg:flex-grow lg:text-right lg:justify-start md:hidden">
           {navLinks.slice(3,6).map((nav,index) => (
-            <li key={index} className="text-[8px] sm:text-xs ">
+            <li key={index} className="text-[8px] sm:text-xs text-[#747070] hover:text-[#CFB661]">
               <Link href= {nav.href}>{nav.nav}</Link>
             </li>
            ))}
