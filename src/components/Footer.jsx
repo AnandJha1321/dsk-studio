@@ -22,7 +22,7 @@ const Footer = () => {
 
         <p className='text-16px text-center font-montserrat w-[80vw] text-[#646363]'>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using Content hereIt is a long established.</p>
 
-        <div className='w-[80%]'>
+        <div className='w-[400px]'>
         <CoursesButton />
         </div>
 
