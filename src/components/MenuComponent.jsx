@@ -4,52 +4,49 @@ import InstaIcon from '@/assets/icons/Insta.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import InquiryButton from './InquiryButton';
-import Logo from './Logo';
 
-const Menu = () => {
-  const [menu, setMenu] = useState(false);
 
-  const handleMenu = () => {
-    setMenu(!menu);
-  };
 
-  const scrollToServices = (e) => {
-    e.preventDefault();
-    const servicesSection = document.getElementById('services');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+const MenuComponent = () => {
+    const navLinks = [
+        { nav: 'HOME', href: '/' },
+        { nav: 'COURSES', href: '/courses' },
+        {
+          nav: 'SERVICES',
+          href: '#services',
+          onClick: (e) => {
+            e.preventDefault();
+            // Check if we are on the home page or not
+            if (window.location.pathname === '/') {
+              scrollToServices(e); // If on home page, scroll smoothly
+            } else {
+              // If on a different page, navigate to the home page
+              window.location.href = '/#services';
+            }
+          },
+        },
+        { nav: 'GALLERY', href: '/gallery' },
+        { nav: 'ARTISTS', href: '/artists' },
+      ];
 
-  const navLinks = [
-    { nav: 'HOME', href: '/' },
-    { nav: 'COURSES', href: '/courses' },
-    {
-      nav: 'SERVICES',
-      href: '#services',
-      onClick: (e) => {
+      const [menu, setMenu] = useState(false);
+
+      const handleMenu = () => {
+        setMenu(!menu);
+      };
+    
+      const scrollToServices = (e) => {
         e.preventDefault();
-        // Check if we are on the home page or not
-        if (window.location.pathname === '/') {
-          scrollToServices(e); // If on home page, scroll smoothly
-        } else {
-          // If on a different page, navigate to the home page
-          window.location.href = '/#services';
+        const servicesSection = document.getElementById('services');
+        if (servicesSection) {
+          servicesSection.scrollIntoView({ behavior: 'smooth' });
         }
-      },
-    },
-    { nav: 'GALLERY', href: '/gallery' },
-    { nav: 'ARTISTS', href: '/artists' },
-  ];
+      };
+    
 
   return (
-    <div>
-      <div className='bg-black w-full h-[70px]'>
-        <div className='flex items-center justify-center py-4'>
-          <Logo />
-        </div>
-      </div>
-      <div className="text-black flex flex-col gap-4 lg:hidden">
+    <>
+        <div className="text-black flex flex-col gap-4 lg:hidden">
         <div className="w-full h-[2.5px] bg-[#969494] mt-1"></div>
         <div className="w-full h-8">
           {!menu ? (
@@ -66,9 +63,8 @@ const Menu = () => {
         </div>
         <div className="w-full h-[2.5px] bg-[#969494] mt-1"></div>
       </div>
-      {/* Navigation Links */}
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out font-montserrat absolute w-full md:hidden z-50 ${
+        className={`overflow-hidden transition-all duration-500 ease-in-out font-montserrat absolute w-full z-50 ${
           menu ? 'max-h-96' : 'max-h-0'
         }`}
       >
@@ -95,8 +91,9 @@ const Menu = () => {
           </ul>
         </ul>
       </div>
-    </div>
-  );
-};
+    </>
+      
+  )
+}
 
-export default Menu;
+export default MenuComponent

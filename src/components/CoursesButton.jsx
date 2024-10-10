@@ -16,7 +16,7 @@ const CoursesButton = () => {
     <Link href={'/courses'}>
       <div
         onClick={handleClick}
-        className='w-[200px] h-[50px] bg-[#CFB661] flex items-center justify-center 
+        className='w-[50%] mx-auto h-[50px] bg-[#CFB661] flex items-center justify-center 
         cursor-pointer custom-shadow'
       >
         <p className='flex gap-4 text-lg font-jacques text-white'>

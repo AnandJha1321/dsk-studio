@@ -13,6 +13,7 @@ const Courses = () => {
   return (
     <main>
       <Header />
+      <MenuComponent />
       <section className="mt-1 max-h-screen pb-8 flex flex-col items-center bg-[#F0EDE3]">
         <div className="flex flex-col mt-8 gap-4">
           <div className="flex flex-col items-center gap-0">

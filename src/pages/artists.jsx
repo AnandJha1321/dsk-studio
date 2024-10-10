@@ -7,6 +7,7 @@ import diya from '@/assets/diya.JPG'
 import deepali from '@/assets/deepali.jpeg'
 import CounterSection from "@/components/artists/CounterComponent";
 import OverlayHero from "@/components/artists/OverlayHero";
+import MenuComponent from "@/components/MenuComponent";
 
 
 const Artists = () => {
@@ -18,6 +19,7 @@ const Artists = () => {
   return (
     <main>
       <Header />
+      <MenuComponent />
       {/* <section className="relative w-full h-[600px] hidden md:block"> */}
       {/* Background Image */}
       {/* <Image
