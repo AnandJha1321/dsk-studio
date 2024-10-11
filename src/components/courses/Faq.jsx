@@ -20,17 +20,17 @@ const Faq = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
         <div>
-            <h2 className="text-center leading-[20px] font-jacques text-[26px] text-[#A88C13]">
+            <h2 className="text-center md:text-[40px] leading-[20px] md:leading-[32px] font-jacques text-[26px] text-[#A88C13]">
                 Any Qestions?
             </h2>
-            <p className='text-center text-[12px] leading-8 font-montserrat'>we have the answers! </p>
+            <p className='text-center md:text-[20px] text-[12px] leading-8 font-montserrat'>we have the answers! </p>
         </div>
 
         <div className='font-montserrat'>
             {faqs.map((faq, index) => (
                 <div key={index}  onClick={() => toggleFAQ(index)}  className='flex flex-col cursor-pointer '>
                     <div className='flex  items-center justify-between mt-8'>
-                        <span className="text-black">{faq.question}</span>
+                        <span className="text-black md:text-[24px]">{faq.question}</span>
                             {activeIndex === index ? (
                             <XIcon className='w-5 text-[#A88C13]' /> // Cross icon when active
                             ) : (

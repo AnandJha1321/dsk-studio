@@ -5,6 +5,7 @@ import Faq from "@/components/courses/Faq"
 import StudentsWorkComponent from "@/components/courses/StudentsWorkComponent"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import MenuComponent from "@/components/MenuComponent"
 import Link from "next/link"
 
 const Courses = () => {
@@ -13,16 +14,19 @@ const Courses = () => {
   return (
     <main>
       <Header />
+      <div className="hidden md:block">
+      <MenuComponent />
+      </div>
       <section className="mt-1 max-h-screen pb-8 flex flex-col items-center bg-[#F0EDE3]">
-        <div className="flex flex-col mt-8 gap-4">
+        <div className="flex flex-col py-14 gap-4">
           <div className="flex flex-col items-center gap-0">
-            <h2 className="text-center leading-[20px] font-jacques text-[26px] text-[#A88C13]">
+            <h2 className="text-center leading-[20px] md:leading-[30px] font-jacques text-[26px] md:text-[40px] text-[#A88C13]">
               COURSES
             </h2>
-            <div className="w-[11rem] bg-[#969494] h-[1.5px] rounded-sm"></div>
+            <div className="w-[11rem] md:w-[16rem]  bg-[#969494] h-[1.5px] rounded-sm"></div>
 
           </div>
-          <p className="w-[370px] text-center font-montserrat text-xs text-[#6C6262] font-medium"
+          <p className="w-[370px] text-center sm:w-[550px] md:w-[600px] lg:w-[800px] sm:text-lg  md:text-center font-montserrat text-xs md:text-xl text-[#6C6262] font-medium"
             >
               Learn bridal and personal makeup <span className="text-yellow-500">step-by-step</span> from Diya and Deepali, as they share their expertise to take you from <span className="text-yellow-500">basics to advanced</span> skills even if
                you dont know anything about makeup.
@@ -37,7 +41,8 @@ const Courses = () => {
       </section>
 
       <section className="bg-white min-h-screen w-full px-4 py-8">
-        <h2 className="text-center font-jacques text-[26px] text-[#A88C13]  leading-tight">Select Courses</h2>
+        <h2 className=" md:text-[40px] text-center font-jacques text-[26px] text-[#A88C13]  leading-tight"
+        >Select Courses</h2>
                 <CourseCard />
         <div className="flex justify-center mt-10">
            <BookingButton />
@@ -46,7 +51,7 @@ const Courses = () => {
 
       <section className="max-h-screen bg-[#F0EDE3] py-8 flex flex-col">
         <div>
-        <h2 className="text-center leading-[20px] font-jacques text-[26px] text-[#A88C13]">
+        <h2 className="text-center  md:text-[40px] leading-[20px] font-jacques text-[26px] text-[#A88C13]">
             Our Students Work
           </h2>
         </div>

@@ -14,7 +14,7 @@ const About = () => {
         <Line />
       </div>
 
-      <div className='flex flex-col items-center lg:flex-row lg:gap-20'>
+      <div className='flex flex-col items-center lg:flex-row md:gap-10 lg:gap-10 xl:gap-40'>
         <div>
           <Image 
             src={owner}

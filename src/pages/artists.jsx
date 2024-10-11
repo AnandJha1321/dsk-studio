@@ -19,7 +19,6 @@ const Artists = () => {
   return (
     <main>
       <Header />
-      <MenuComponent />
       {/* <section className="relative w-full h-[600px] hidden md:block"> */}
       {/* Background Image */}
       {/* <Image

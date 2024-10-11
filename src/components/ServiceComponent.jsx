@@ -3,7 +3,7 @@ import React from 'react'
 
 const ServiceComponent = ({img, text}) => {
   return (
-    <div className="relative w-[350px] h-[500px] bg-gray-200 shadow-md overflow-hidden ">
+    <div className="relative w-[350px] h-[500px] xl:w-[350px] xl:h-[500px] lg:w-[300px] lg:h-[400px] bg-gray-200 shadow-md overflow-hidden ">
         {/* Background Image */}
         <Image
             src={img} 

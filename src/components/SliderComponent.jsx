@@ -18,37 +18,83 @@ import slide5 from '@/assets/slide5.PNG'
 export default function SliderComponent() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="h-[100%] md:min-w-[1000px] md:h-[600px] mb-6 swiper2">
+      <Swiper navigation={true} modules={[Navigation]} className="h-[100%]  md:w-[700px] lg:w-[1000px] lg:h-[800px] xl:h-[800px] xl:w-[1000px] flex items-center mb-6 swiper2">
         <SwiperSlide>
           <Image 
             src={slide1}
             alt='slid1'
+            quality={100}
+            // width= "100%"
+            objectFit='cover'
+            layout='fill'
+            className='hidden lg:block xl:block'
+          />
+
+
+          <Image 
+            src={slide1}
+            alt='slid1'
+            quality={100}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image 
             src={slide2}
             alt='slid2'
+            objectFit='cover'
+            layout='fill'
+            className='hidden lg:block xl:block'
+          />
 
+          <Image 
+            src={slide2}
+            alt='slid1'
+            quality={100}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image 
             src={slide3}
             alt='slid3'
+            objectFit='cover'
+            layout='fill'
+            className='hidden lg:block xl:block'
+          />
 
+          <Image 
+            src={slide3}
+            alt='slid1'
+            quality={100}
           />
         </SwiperSlide>
         <SwiperSlide>
         <Image 
             src={slide4}
             alt='slid4'
-          />
+             objectFit='cover'
+            layout='fill'
+            className='hidden lg:block xl:block'
+          /> 
+          
+          <Image 
+          src={slide4}
+          alt='slid1'
+          quality={100}
+        />
         </SwiperSlide>
         <SwiperSlide>
         <Image 
             src={slide5}
             alt='slid5'
+             objectFit='cover'
+            layout='fill'
+            className='hidden lg:block xl:block'
+          />
+
+          <Image 
+            src={slide5}
+            alt='slid1'
+            quality={100}
           />
         </SwiperSlide>
       </Swiper>

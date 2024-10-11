@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 import importAll from '@/components/Gallery/Images';
+import MenuComponent from '@/components/MenuComponent';
 
 // Import images dynamically using require.context
 const allImages = importAll(require.context('../assets/gallery', false, /\.(png|PNG|JPG|jpe?g|jpg|svg)$/));
@@ -40,7 +41,6 @@ const Gallery = () => {
   return (
     <>
       <Header />
-      <MenuComponent />
       <div className='w-full bg-[#F0EDE3] h-[150px] text-[#BFA534] flex items-center justify-center'>
         <p className='font-jacques text-[40px] tracking-widest'>The Galleries</p>
       </div>

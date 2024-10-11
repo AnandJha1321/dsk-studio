@@ -28,7 +28,7 @@ const Header = () => {
         <nav className="w-full mx-auto flex justify-between items-center px-4">
           {/* Left side - Social icons */}
           <div className="flex ">
-            <Link href="https://facebook.com" className="text-gray-700 lg:ml-20 md:hidden lg:block ">
+            <Link href="https://www.instagram.com/dsk_makeup_studio/?hl=en" className="text-gray-700 lg:ml-20 md:hidden lg:block ">
               <Image 
                 src={instaWhite}
                 alt='insta'

@@ -43,7 +43,7 @@ const TestimonialSlider = () => {
         loop={true}
         pagination={{ clickable: true }}
         navigation={true}
-        className="testimonial mySwiper"
+        className="testimonial"
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index} className="slide">

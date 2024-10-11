@@ -5,7 +5,7 @@ import herodesk from '@/assets/herodesk.png'
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-80 md:h-screen">
+    <section className="relative w-full h-80 md:h-screen sm:h-96">
       {/* Background Image */}
       <Image
         src={hero}
@@ -20,10 +20,11 @@ const Hero = () => {
       <Image
         src={herodesk}
         layout="fill"
+        quality={100}
         objectFit="cover"
         alt="Makeup Studio Hero"
         priority
-        className='hidden md:block'
+        className='hidden md:block sm:block'
     
       />
       

@@ -12,18 +12,19 @@ const Services = () => {
             <p className='font-montserrat text-[12px]'>Services Loved by people</p>
         </div>
 
-        <div>
-            <ServiceComponent img = {demo} text= "BRIDE & GROOM"/>
-        </div>
+        <div className='lg:flex-row flex flex-col gap-10 lg:gap-10 xl:gap-12'>
+            <div>
+                <ServiceComponent img = {demo} text= "BRIDE & GROOM"/>
+            </div>
 
-        <div>
-            <ServiceComponent img = {demo} text= "HAIRS SERVICE"/>
-        </div>
+            <div>
+                <ServiceComponent img = {demo} text= "HAIRS SERVICE"/>
+            </div>
 
-        <div>
-            <ServiceComponent img = {demo} text= "SHOOT MAKEUP"/>
+            <div>
+                <ServiceComponent img = {demo} text= "SHOOT MAKEUP"/>
+            </div>
         </div>
-
 
         <InquiryButton />
     </div>
