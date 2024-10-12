@@ -22,13 +22,13 @@ const Footer = () => {
             <div className='flex flex-col items-center py-0 cursor-pointer'>
                 <h1 className= {`font-inter font-bold text-[#FFD700] text-[32px] leading-none md:text-[40px]'`}>DSK</h1>
                 <p className='font-jacques text-[12px] leading-none tracking-wide md:text-[15px] '>Makeover & Academy</p>  
-                </div>
+            </div>
 
-                <p className='text-[16px] text-center lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
+                <p className='text-[16px] text-center mx-auto lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
                 DSK Makeover is Located at 107/B, Ajmalramdev Building, No. 2, SV Rd, above Naresh Steel Centre, Bhayandar East, Mumbai                 
                 </p>
 
-                <p className='text-[16px] text-center lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
+                <p className='text-[16px] text-center mx-auto lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
                     Contact us on +9867035747 / +9324970277</p>
 
                 <div className='w-[400px] mx-auto'>
