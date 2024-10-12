@@ -25,7 +25,11 @@ const Footer = () => {
                 </div>
 
                 <p className='text-[16px] text-center lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed to using Content hereIt is a long established.</p>
+                DSK Makeover is Located at 107/B, Ajmalramdev Building, No. 2, SV Rd, above Naresh Steel Centre, Bhayandar East, Mumbai                 
+                </p>
+
+                <p className='text-[16px] text-center lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
+                    Contact us on +9867035747 / +9324970277</p>
 
                 <div className='w-[400px] mx-auto'>
                 <CoursesButton />
@@ -45,7 +49,7 @@ const Footer = () => {
 
         <div className='flex flex-col  justify-center items-center lg:block text-[4vw] font-montserrat text-[#696767] tracking-wide'>
 
-            <p className='flex gap-2   items-center lg:text-[18px]  lg:whitespace-nowrap'>
+            <p className='flex gap-2  items-center lg:text-[18px]  lg:whitespace-nowrap'>
                 FOLLOW US ON
                 <a href="https://www.instagram.com/dsk_makeup_studio/?hl=en">
           

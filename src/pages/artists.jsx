@@ -8,6 +8,7 @@ import deepali from '@/assets/deepali.jpeg'
 import CounterSection from "@/components/artists/CounterComponent";
 import OverlayHero from "@/components/artists/OverlayHero";
 import MenuComponent from "@/components/MenuComponent";
+import Footer from "@/components/Footer";
 
 
 const Artists = () => {
@@ -19,6 +20,9 @@ const Artists = () => {
   return (
     <main>
       <Header />
+      <div className="hidden md:block">
+        <MenuComponent />
+      </div>
       {/* <section className="relative w-full h-[600px] hidden md:block"> */}
       {/* Background Image */}
       {/* <Image
@@ -43,15 +47,15 @@ const Artists = () => {
       </div>
     </section> */}
 
-    <section className="min-h-screen w-full bg-[#F0EDE3] py-8 flex flex-col items-center gap-12 font-montserrat">
-      
-      <AboutArtists src = {diya} text= {artistdata[0].text} name= {artistdata[0].name} />
-      <AboutArtists src = {deepali} text= {artistdata[1].text} name= {artistdata[1].name} />
-      </section>  
+    <section className="min-h-screen w-full bg-[#F0EDE3] py-8 pb-12 flex flex-col items-center gap-12 font-montserrat">
+      <AboutArtists src={diya} text={artistdata[0].text} name={artistdata[0].name} />
+      <AboutArtists src={deepali} text={artistdata[1].text} name={artistdata[1].name} reverse />
+    </section>
+
       <CounterSection />
 
       <OverlayHero />
-      
+      <Footer />
     </main>
   )
 }

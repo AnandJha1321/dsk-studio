@@ -3,6 +3,7 @@ import demo from '@/assets/demo.jpg'
 import Image from 'next/image'
 import ServiceComponent from './ServiceComponent'
 import InquiryButton from './InquiryButton'
+import hairs from '@/assets/hairs.jpg'
 
 const Services = () => {
   return (
@@ -18,7 +19,7 @@ const Services = () => {
             </div>
 
             <div>
-                <ServiceComponent img = {demo} text= "HAIRS SERVICE"/>
+                <ServiceComponent img = {hairs} text= "HAIRS SERVICE"/>
             </div>
 
             <div>

@@ -10,7 +10,7 @@ const ServiceComponent = ({img, text}) => {
             alt="Bride and Groom"
             layout="fill"
             objectFit="cover"
-            className="brightness-75"
+            className="brightness-50"
         />
 
         {/* Overlay Text */}

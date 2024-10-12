@@ -31,7 +31,7 @@ const Hero = () => {
       {/* Overlay with text */}
       <div className="absolute inset-0 bg-black bg-opacity-60 flex items-end  px-8">
         <div className="min-w-lg md:mb-10 lg:mb-4">
-          <h1 className="text-white text-base leading-tight mb-1 font-normal font-montserrat  w-64 md:w-[70%] lg:w-[80%] md:text-[40px] lg:text-[54px]">
+          <h1 className="text-white text-base leading-tight mb-1 font-normal font-montserrat  w-64 md:max-w-[79%]  lg:w-[80%] sm:text-[24px]  sm:w-[65%] md:text-[40px] lg:text-[54px]">
             Elevating Your Beauty, Embracing Your Confidence
           </h1>
           <p className="text-gray-300 text-xs font-montserrat w-[270px] mb-7 md:w-[55%] md:text-lg">
