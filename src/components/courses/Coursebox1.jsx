@@ -189,7 +189,7 @@ const CourseCard = ({ course, id }) => {
           <p className="text-gray-300 text-xs  font-montserrat w-[320px] mb-4 sm:text-sm  sm:w-[400px]  ">
             {course.description}
           </p>
-          <ul className={`${id === 2 || id === 0
+          <ul className={`${id === 2 || id === 0 || id === 4
           ? "w-full pb-3 sm:grid sm:grid-cols-2 lg:block"
             : "w-[90%] sm:w-[70%] md:w-[70%] text-nowrap grid grid-cols-2 mb-4  "}`}>
             {course.contents.map((item, index) => (
