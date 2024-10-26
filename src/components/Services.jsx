@@ -1,5 +1,6 @@
 import React from 'react'
 import demo from '@/assets/demo.jpg'
+import Bridal from '@/assets/Bridal.jpg'
 import Image from 'next/image'
 import ServiceComponent from './ServiceComponent'
 import InquiryButton from './InquiryButton'
@@ -15,7 +16,7 @@ const Services = () => {
 
         <div className='lg:flex-row flex flex-col gap-10 lg:gap-10 xl:gap-12'>
             <div>
-                <ServiceComponent img = {demo} text= "BRIDE & GROOM"/>
+                <ServiceComponent img = {Bridal} text= "BRIDE & GROOM"/>
             </div>
 
             <div>

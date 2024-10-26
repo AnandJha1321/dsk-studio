@@ -170,52 +170,70 @@ const courses = [
 
 const CourseCard = ({ course, id }) => {
   return (
-    <section className={`relative w-[100%] h-[350px] `}>
-      {/* Background Image */}
-      <Image
-        src={course.image}
-        layout="fill"
-        objectFit="cover"
-        alt="Course Images"
-        priority
-      />
-      
-      {/* Overlay with text */}
-      <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col py-4 px-6">
-        <div className="my-3">
-          <h1 className="text-[#cfb336] text-[24px] leading-tight mb-1 font-medium font-montserrat w-[334px]">
-            {course.title}
-          </h1>
-          <p className="text-gray-300 text-xs  font-montserrat w-[320px] mb-4 sm:text-sm  sm:w-[400px]  ">
-            {course.description}
-          </p>
-          <ul className={`${id === 2 || id === 0 || id === 4
-          ? "w-full pb-3 sm:grid sm:grid-cols-2 lg:block"
-            : "w-[90%] sm:w-[70%] md:w-[70%] text-nowrap grid grid-cols-2 mb-4  "}`}>
-            {course.contents.map((item, index) => (
-              <li key={index} className="text-white list-none font-lato text-left " >
-                <p className= 'flex items-center gap-3 text-[14px] md:text-base'>    
-                  <span>
-                  <CheckCircleIcon className={`${item === 'Bridal Course' || item === 'Hairstyle Course' ? 'w-5' : 'w-4'} text-yellow-400`} />
-                    </span>             
-                  {item}
-                </p>
-                </li>
-            ))}
-          </ul>
-          <div className='flex '>
-            <button className="bg-white flex text-black px-2 items-center justify-center text-[14px] py-2 
-            font-montserrat hover:bg-gray-200 transition duration-200  text-nowrap">
-              <span className="mr-2"><PhoneIcon className='w-4'/></span>
-              Call Now For 10% off
-            </button>
-            <button className="bg-black flex text-white ml-3 px-3 items-center hover:text-black justify-center text-[14px]
-             py-2 font-montserrat hover:bg-gray-200 transition duration-200  text-nowrap"
-             > <span><DownloadIcon className='w-4 mr-2'/></span>Get Syllabus</button>
-          </div>
+    <section className={`relative w-[100%] h-[350px]`}>
+    {/* Background Image */}
+    <Image
+      src={course.image}
+      layout="fill"
+      objectFit="cover"
+      alt="Course Images"
+      priority
+    />
+  
+    {/* Overlay with text */}
+    <div className="absolute inset-0 bg-black bg-opacity-75 flex flex-col py-4 px-6">
+      <div className="my-3">
+        <h1 className="text-[#cfb336] text-[24px] leading-tight mb-1 font-medium font-montserrat w-[334px]">
+          {course.title}
+        </h1>
+        <p className="text-gray-300 text-xs font-montserrat w-[320px] mb-4 sm:text-sm sm:w-[400px]">
+          {course.description}
+        </p>
+        <ul
+          className={`${
+            id === 2 || id === 0 || id === 4
+              ? "w-full pb-3 sm:grid sm:grid-cols-2 xl:grid xl:grid-cols-2 lg:block"
+              : "w-[90%] sm:w-[70%] md:w-[70%] text-nowrap grid grid-cols-2 mb-4"
+          }`}
+        >
+          {course.contents.map((item, index) => (
+            <li key={index} className="text-white list-none font-lato text-left">
+              <p className="flex items-center gap-2 text-[14px] md:text-base">
+                <span className="">
+                  <CheckCircleIcon
+                    className={`${
+                      item === "Bridal Course" || item === "Hairstyle Course"
+                        ? "w-4"
+                        : "w-4"
+                    } text-yellow-400`}
+                  />
+                </span>
+               <span className='pr-4'>
+                {item}
+               </span>
+              </p>
+            </li>
+          ))}
+        </ul>
+        <div className="flex">
+          <button className="bg-white flex text-black px-2 items-center justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200 text-nowrap">
+            <span className="mr-2">
+              <PhoneIcon className="w-4" />
+            </span>
+            Call Now For 10% off
+          </button>
+          <button
+            className="bg-black flex text-white ml-3 px-3 items-center hover:text-black justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200 text-nowrap"
+          >
+            <span>
+              <DownloadIcon className="w-4 mr-2" />
+            </span>
+            Get Syllabus
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>  
   );
 };
 
