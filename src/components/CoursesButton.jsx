@@ -17,7 +17,7 @@ const CoursesButton = () => {
       <div
         onClick={handleClick}
         className='w-[50%] mx-auto h-[50px] bg-[#CFB661] flex items-center justify-center 
-        cursor-pointer custom-shadow'
+        cursor-pointer '
       >
         <p className='flex gap-4 text-lg font-jacques text-white'>
           View Courses

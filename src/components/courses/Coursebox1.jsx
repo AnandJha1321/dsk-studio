@@ -216,12 +216,16 @@ const CourseCard = ({ course, id }) => {
           ))}
         </ul>
         <div className="flex">
+          <a href="tel:+9867035747">
           <button className="bg-white flex text-black px-2 items-center justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200 text-nowrap">
             <span className="mr-2">
               <PhoneIcon className="w-4" />
             </span>
-            Call Now For 10% off
+            Contact For Pricing
           </button>
+          </a>
+
+          <Link href="/coursedetails">
           <button
             className="bg-black flex text-white ml-3 px-3 items-center hover:text-black justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200 text-nowrap"
           >
@@ -230,6 +234,7 @@ const CourseCard = ({ course, id }) => {
             </span>
             Get Syllabus
           </button>
+          </Link>
         </div>
       </div>
     </div>

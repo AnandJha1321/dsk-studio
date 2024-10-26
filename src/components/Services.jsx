@@ -24,7 +24,7 @@ const Services = () => {
             </div>
 
             <div>
-                <ServiceComponent img = {demo} text= "SHOOT MAKEUP"/>
+                <ServiceComponent img = {demo} text= "MAKEUP SHOOT"/>
             </div>
         </div>
 
