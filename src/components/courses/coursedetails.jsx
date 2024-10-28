@@ -1,7 +1,6 @@
 // components/CourseDetailPage.js
 
 import Image from 'next/image';
-import React, { useRef, useState } from 'react';
 import corrective from '@/assets/corrective.jpeg';
 import Footer from '../Footer';
 import Header from '../Header';
