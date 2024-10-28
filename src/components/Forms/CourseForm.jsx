@@ -1,6 +1,5 @@
 import { addDoc, collection } from '@firebase/firestore';
 import { firestore } from '@/firebase';
-import diya from '@/assets/diya.jpg'
 
 
 import React, { useRef, useState } from 'react'
