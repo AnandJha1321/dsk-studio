@@ -1,6 +1,7 @@
 // pages/course-detail.js
 
-import CourseDetailPage from '../components/courses/Coursedetails';
+import CourseDetailPage from "@/components/courses/CourseDetailPage";
+
 
 
 
