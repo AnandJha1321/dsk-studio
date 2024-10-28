@@ -18,7 +18,7 @@ const Faq = () => {
       };
 
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center pt-10'>
         <div>
             <h2 className="text-center md:text-[40px] leading-[20px] md:leading-[32px] font-jacques text-[26px] text-[#A88C13]">
                 Any Qestions?

@@ -4,6 +4,7 @@ import Coursebox1 from "@/components/courses/Coursebox1"
 import Faq from "@/components/courses/Faq"
 import StudentsWorkComponent from "@/components/courses/StudentsWorkComponent"
 import Footer from "@/components/Footer"
+import CourseForm from "@/components/Forms/CourseForm"
 import Header from "@/components/Header"
 import MenuComponent from "@/components/MenuComponent"
 import Link from "next/link"
@@ -49,7 +50,7 @@ const Courses = () => {
         </div>
       </section>
 
-      <section className="max-h-screen bg-[#F0EDE3] py-8 flex flex-col">
+      <section className="min-h-screen bg-[#F0EDE3] py-8 flex flex-col">
         <div>
         <h2 className="text-center  md:text-[40px] leading-[20px] font-jacques text-[26px] text-[#A88C13]">
             Our Students Work
@@ -59,6 +60,10 @@ const Courses = () => {
               <StudentsWorkComponent/>
         </div>
 
+        <div>
+        <CourseForm />
+
+        </div>
         <div className="">
           <Faq />
         </div>

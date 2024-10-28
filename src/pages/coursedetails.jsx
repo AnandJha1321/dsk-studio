@@ -1,6 +1,9 @@
 // pages/course-detail.js
 
-import CourseDetailPage from '../components/courses/coursedetails';
+import CourseDetailPage from '../components/courses/Coursedetails';
+
+
+
 
 export default function CourseDetail() {
   const courseData = {
