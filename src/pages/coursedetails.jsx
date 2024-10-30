@@ -2,10 +2,6 @@
 
 import CourseDetailPage from "@/components/courses/CourseDetailPage";
 
-
-
-
-
 export default function CourseDetail() {
   const courseData = {
     title: 'Basic to International Makeup & Hairstyle Course',
