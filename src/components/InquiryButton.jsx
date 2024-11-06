@@ -8,7 +8,7 @@ import Link from 'next/link'
 const InquiryButton = () => {
   return (
     <a
-    href= "tel:+9321633596"
+    href= "tel:+919867035747"
     >
     <div className='min-w-fit h-[50px]  md:h-[50px] bg-[#CFB661] flex items-center justify-center 
     cursor-pointer hover:bg-[#A88C13] transition duration-300 mb-2'>
