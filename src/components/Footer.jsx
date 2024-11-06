@@ -13,9 +13,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <section className='max-h-screen w-full lg:w-full bg-white text-center '>
-
-
+    <section className='max-h-screen w-full lg:w-full bg-white text-center'>
         <div className='flex flex-col  lg:flex-row lg:items-center lg:justify-center items-center 
         my-10 gap-8 lg:gap-8 xl:gap-12 xl:pr-12'>
         <div className='flex-col items-center justify-center space-y-4 '>
@@ -25,11 +23,11 @@ const Footer = () => {
             </div>
 
                 <p className='text-[16px] text-center mx-auto lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
-                DSK Makeover is Located at 107/B, Ajmalramdev Building, No. 2, SV Rd, above Naresh Steel Centre, Bhayandar East, Mumbai                 
+                DSK makeover is located at 107/B, Ajmal Ramdev bldg no.2 S.V Road , Above Naresh Steel, Bhayandar East, Mumabi                
                 </p>
 
                 <p className='text-[16px] text-center mx-auto lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
-                    Contact us on +9867035747 / +9324970277</p>
+                    Contact us on 9867035747 / 9324970277</p>
 
                 <div className='w-[400px] mx-auto'>
                 <CoursesButton />
