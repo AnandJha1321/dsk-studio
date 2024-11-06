@@ -29,6 +29,7 @@ const courses = [
       'Reception',
       'Engagement',
     ],
+    link: "/coursedetails1"
   },
   {
     id: 'basic-to-international',
@@ -46,6 +47,7 @@ const courses = [
       'Corrective Makeup',
       'And More...'
     ],
+    link: "/coursedetails"
   },
   {
     id: 'hairstyle',
@@ -61,6 +63,7 @@ const courses = [
       'Hair Buns (Indian Bun, Messy Bun)',
       'International Hairstyle'
     ],
+    link: "/coursedetails1"
   },
   {
     id: 'beautician-course',
@@ -81,6 +84,7 @@ const courses = [
       'Hair Spa',
       'Hair treatments',
     ],
+    link: "/coursedetails1"
   },
   {
     id: 'basic-to-advance',
@@ -97,6 +101,7 @@ const courses = [
       'HD Makeup',
       'Runway Catwalk'
     ],
+    link: "/coursedetails1"
   },
   {
     id: 'hair-treatment',
@@ -117,6 +122,8 @@ const courses = [
       'Kerasmootheing',
       'Hair Spa'
     ],
+    link: "/coursedetails1"
+
   },
 ];
 
@@ -225,7 +232,7 @@ const CourseCard = ({ course, id }) => {
           </button>
           </a>
 
-          <Link href="/coursedetails">
+          <Link href= {course.link}>
           <button
             className="bg-black flex text-white ml-3 px-3 items-center hover:text-black justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200 text-nowrap"
           >

@@ -13,8 +13,8 @@ import Footer from "@/components/Footer";
 
 const Artists = () => {
   const artistdata = [
-    {name: "Diya Jogi", text:"he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. As opposed to using 'Content hereIt is a long established"},
-    {name: "Deepali Jogi", text:"he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. As opposed to using 'Content hereIt is a long established"}
+    {name: "Diya Jogi", text:"Meet Diya Jogi ,a highly acclaimed Cidesco certified makeup artist and makeup trainer, renowned for their exceptional skill and artistry in the beauty industry, with a passion for enhancing natural beauty and a keen eye for detail, she has established themselves as a master of their craft, with a career spanning 3 years. As a Cidesco certified professional, she has demonstrated expertise in all aspects of makeup artistry, from bridal and evening makeup to special effects."},
+    {name: "Deepali Jogi", text:"Meet Deepali Jogi ,she is a hairstyle trainer and beautician with a wealth of experience spanning 25 years, With a passion for empowering others to unlock their creativity and potential, she has dedicated their career to sharing their expertise with aspiring stylists and beauty enthusiasts. As a trainer, she is renowned for their patience, guidance, and ability to break down complex techniques into easy-to-master skills."}
   ]
 
   return (

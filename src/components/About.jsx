@@ -2,7 +2,7 @@ import React from 'react';
 import Line from './Line';
 import Image from 'next/image';
 import demo from '@/assets/demo.jpg';
-import owner from '@/assets/owner.jpg';
+import owners from '@/assets/owners.PNG';
 import CoursesButton from './CoursesButton';
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
       <div className='flex flex-col items-center lg:flex-row md:gap-10 lg:gap-10 xl:gap-40'>
         <div>
           <Image 
-            src={owner}
+            src={owners}
             alt='ownerImage'
             width={350}
             className='md:hidden'
@@ -25,7 +25,7 @@ const About = () => {
 
 
         <Image 
-            src={owner}
+            src={owners}
             alt='ownerImage'
             width={450}
             className='hidden md:block'
@@ -38,12 +38,11 @@ const About = () => {
             <h3 className='mt-3 text-[16px] tracking-wider font-jacques text-center'>FOUNDER&apos;S & LEAD ARTIST&apos;S AT DSK</h3>
 
             <p className='w-[380px] md:w-[500px] font-montserrat text-[14px] text-gray-800 mt-6 text-center leading-6 tracking-wide'>
-              Deepali and her daughter Diya are among the most talented makeup artists in Mumbai, with a passion for delivering exceptional client experiences. At DSK, their mission is to help every 
-              client discover their most beautiful self, from pre-wedding shoot makeup to the big wedding day itself. 
+              Deepali and her daughter Diya are among the most talented makeup artists in Mumbai, with a passion for delivering exceptional client experiences.
               <br />
               <br />
               Having trained over <span className='text-[#A88C13]'>100+</span> students, they offer a comprehensive range of makeup courses that provide hands-on practice, a well-structured curriculum, and even the 
-              opportunity for a 3-month internship at DSK, ensuring that students gain real-world experience in a professional environment.
+              opportunity  for a <span className='text-[#A88C13]'> 3-month</span> internship at DSK, ensuring that students gain real-world experience in a professional environment.
             </p>
 
             <div className='mt-10'>
