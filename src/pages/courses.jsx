@@ -29,8 +29,7 @@ const Courses = () => {
           </div>
           <p className="w-[370px] text-center sm:w-[550px] md:w-[600px] lg:w-[800px] sm:text-lg  md:text-center font-montserrat text-xs md:text-xl text-[#6C6262] font-medium"
             >
-              Learn bridal and personal makeup 
-              <span className="text-yellow-500">step-by-step</span> from Diya and Deepali, as they share their expertise to take you from <span className="text-yellow-500">basics to advanced</span> skills even if
+              Learn bridal and personal makeup <span className="text-yellow-500"> step-by-step</span> from Diya and Deepali, as they share their expertise to take you from <span className="text-yellow-500">basics to advanced</span> skills even if
                you dont know anything about makeup.
           </p>
         </div>

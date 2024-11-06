@@ -223,7 +223,7 @@ const CourseCard = ({ course, id }) => {
           ))}
         </ul>
         <div className="flex">
-          <a href="tel:+9867035747">
+          <a href="tel:+919867035747">
           <button className="bg-white flex text-black px-2 items-center justify-center text-[14px] py-2 font-montserrat hover:bg-gray-200 transition duration-200 text-nowrap">
             <span className="mr-2">
               <PhoneIcon className="w-4" />

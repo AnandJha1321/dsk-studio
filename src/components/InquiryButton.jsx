@@ -30,8 +30,6 @@ const InquiryButton = () => {
                 alt='vector'
                 className='hidden lg:block'
                 />
-
-             
             </span> 
             Inquire Now
          </p>
