@@ -24,7 +24,7 @@ const Footer = () => {
 
                 <p className='text-[16px] text-center mx-auto lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
                 DSK makeover is located at <br />
-                107/B, Ajmal Ramdev bldg no.2, <br /> S.V Road, Above Naresh Steel <br /> Bhayandar East, Mumabi                
+                107/B, Ajmal Ramdev bldg no.2, <br /> S.V Road, Above Naresh Steel <br /> Bhayandar East, Mumbai             
                 </p>
 
                 <p className='text-[16px] text-center mx-auto lg:mx-auto font-montserrat w-[80vw] lg:w-[30vw]  text-[#646363]'>
