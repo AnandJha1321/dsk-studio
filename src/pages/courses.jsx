@@ -17,11 +17,11 @@ const Courses = ({
 
   return (
     <>  
-      <title>courses - DSK Makeover & Academy</title>
       <Head>
+      <title>courses - DSK Makeover & Academy</title>
         <meta
           name="description"
-          content="From Basic to Advance Makeup Courses, become an International Makeup within 4 months with our 
+          content="From Basic to Advance Makeup Courses, become an International Makeup within 4 months with  
           expert teaching you advance level even if you don't know anything about makeup..."
         />
         <meta property="og:title" content="DSK Makeover & Academy" />

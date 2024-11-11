@@ -10,7 +10,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
        <Header />
        <div className="lg:hidden hidden md:block">
        <MenuComponent />
